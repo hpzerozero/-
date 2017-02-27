@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HPCell" id="gTV-IL-0wX" customClass="HPCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q8z-0Y-7DL">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="156"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="community_praise_red_empty" translatesAutoresizingMaskIntoConstraints="NO" id="bYE-ck-0z2">
+                        <rect key="frame" x="5" y="161" width="13" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="XE7-v3-vyw"/>
+                            <constraint firstAttribute="width" constant="13" id="Yq3-kt-rTi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-E2-0OR">
+                        <rect key="frame" x="41" y="159.5" width="70" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Zrw-yl-1hg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms_red" translatesAutoresizingMaskIntoConstraints="NO" id="B5w-md-zvw">
+                        <rect key="frame" x="23" y="162" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="ObB-Vx-CMq"/>
+                            <constraint firstAttribute="height" constant="13" id="wQX-ne-T9z"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZKT-E2-0OR" firstAttribute="leading" secondItem="B5w-md-zvw" secondAttribute="trailing" constant="5" id="33v-GC-vBX"/>
+                <constraint firstAttribute="trailing" secondItem="ZKT-E2-0OR" secondAttribute="trailing" constant="5" id="8NJ-yQ-lVd"/>
+                <constraint firstItem="Q8z-0Y-7DL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H63-4J-8kU"/>
+                <constraint firstAttribute="trailing" secondItem="Q8z-0Y-7DL" secondAttribute="trailing" id="McX-Qw-uRO"/>
+                <constraint firstItem="bYE-ck-0z2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="MrZ-Mh-gvW"/>
+                <constraint firstItem="bYE-ck-0z2" firstAttribute="top" secondItem="Q8z-0Y-7DL" secondAttribute="bottom" constant="5" id="NPH-pP-y1J"/>
+                <constraint firstItem="ZKT-E2-0OR" firstAttribute="centerY" secondItem="bYE-ck-0z2" secondAttribute="centerY" id="QGI-5z-GPF"/>
+                <constraint firstItem="Q8z-0Y-7DL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f0y-Ld-q8Y"/>
+                <constraint firstItem="B5w-md-zvw" firstAttribute="leading" secondItem="bYE-ck-0z2" secondAttribute="trailing" constant="5" id="hvL-dG-2wp"/>
+                <constraint firstItem="B5w-md-zvw" firstAttribute="centerY" secondItem="bYE-ck-0z2" secondAttribute="centerY" constant="1" id="wGK-m3-EdX"/>
+                <constraint firstAttribute="bottom" secondItem="bYE-ck-0z2" secondAttribute="bottom" constant="5" id="zaf-Y9-Zg3"/>
+            </constraints>
+            <size key="customSize" width="116" height="180"/>
+            <connections>
+                <outlet property="imageView" destination="Q8z-0Y-7DL" id="ujb-3t-pb9"/>
+                <outlet property="priceLabel" destination="ZKT-E2-0OR" id="P6c-Ty-uPu"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="2"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="community_praise_red_empty" width="13" height="14"/>
+        <image name="sms_red" width="20" height="20"/>
+    </resources>
+</document>

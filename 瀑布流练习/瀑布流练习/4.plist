@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>h</key>
+        <integer>268</integer>
+        <key>img</key>
+        <string>http://s13.mogujie.cn/b7/bao/131011/rfdxh_kqyucrczkfbdordwgfjeg5sckzsew_278x372.jpg_200x999.jpg</string>
+        <key>price</key>
+        <string>¥145</string>
+        <key>w</key>
+        <integer>200</integer>
+    </dict>
+    <dict>
+        <key>h</key>
+        <integer>284</integer>
+        <key>img</key>
+        <string>http://s6.mogujie.cn/b7/bao/131011/y3pli_kqywwtc2kfbfitdwgfjeg5sckzsew_289x409.jpg_200x999.jpg</string>
+        <key>price</key>
+        <string>¥65</string>
+        <key>w</key>
+        <integer>200</integer>
+    </dict>
+    <dict>
+        <key>h</key>
+        <integer>300</integer>
+        <key>img</key>
+        <string>http://s13.mogujie.cn/b7/bao/131014/10gh9k_kqyvix2wkfbewx3wgfjeg5sckzsew_800x1200.jpg_200x999.jpg</string>
+        <key>price</key>
+        <string>¥138</string>
+        <key>w</key>
+        <integer>200</integer>
+    </dict>
+    <dict>
+        <key>h</key>
+        <integer>300</integer>
+        <key>img</key>
+        <string>http://s6.mogujie.cn/b7/bao/131014/rk26f_kqyug2lekfbf6tcugfjeg5sckzsew_780x1170.jpg_200x999.jpg</string>
+        <key>price</key>
+        <string>¥98</string>
+        <key>w</key>
+        <integer>200</integer>
+    </dict>
+    <dict>
+        <key>h</key>
+        <integer>293</integer>
+        <key>img</key>
+        <string>http://s6.mogujie.cn/b7/bao/131008/4fgyw_kqyuwrdekfbguwsugfjeg5sckzsew_379x554.jpg_200x999.jpg</string>
+        <key>price</key>
+        <string>¥83</string>
+        <key>w</key>
+        <integer>200</integer>
+    </dict>
+</array>
+</plist>
