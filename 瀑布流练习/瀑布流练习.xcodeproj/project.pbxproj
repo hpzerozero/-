@@ -29,7 +29,6 @@
 		E66C26091E62E9EF006DC0C6 /* HPCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E66C26071E62E9EF006DC0C6 /* HPCollectionFooterView.m */; };
 		E66C260A1E62E9EF006DC0C6 /* HPCollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66C26081E62E9EF006DC0C6 /* HPCollectionFooterView.xib */; };
 		E66C260C1E63CFF2006DC0C6 /* 4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E66C260B1E63CFF2006DC0C6 /* 4.plist */; };
-		E66C260F1E63D8BD006DC0C6 /* HPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66C260E1E63D8BD006DC0C6 /* HPViewController.m */; };
 		E66C269F1E63FE8D006DC0C6 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = E66C26671E63FE8D006DC0C6 /* MJArgument.m */; };
 		E66C26A01E63FE8D006DC0C6 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E66C26691E63FE8D006DC0C6 /* MJConst.m */; };
 		E66C26A11E63FE8D006DC0C6 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E66C266C1E63FE8D006DC0C6 /* MJFoundation.m */; };
@@ -113,8 +112,6 @@
 		E66C26071E62E9EF006DC0C6 /* HPCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCollectionFooterView.m; sourceTree = "<group>"; };
 		E66C26081E62E9EF006DC0C6 /* HPCollectionFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPCollectionFooterView.xib; sourceTree = "<group>"; };
 		E66C260B1E63CFF2006DC0C6 /* 4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 4.plist; sourceTree = "<group>"; };
-		E66C260D1E63D8BD006DC0C6 /* HPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPViewController.h; sourceTree = "<group>"; };
-		E66C260E1E63D8BD006DC0C6 /* HPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPViewController.m; sourceTree = "<group>"; };
 		E66C26661E63FE8D006DC0C6 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
 		E66C26671E63FE8D006DC0C6 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
 		E66C26681E63FE8D006DC0C6 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
@@ -227,8 +224,6 @@
 				E66C254C1E6012F6006DC0C6 /* AppDelegate.m */,
 				E66C254E1E6012F6006DC0C6 /* ViewController.h */,
 				E66C254F1E6012F6006DC0C6 /* ViewController.m */,
-				E66C260D1E63D8BD006DC0C6 /* HPViewController.h */,
-				E66C260E1E63D8BD006DC0C6 /* HPViewController.m */,
 				E66C257B1E60146D006DC0C6 /* HPCollectionViewFlowLayout.h */,
 				E66C257C1E60146D006DC0C6 /* HPCollectionViewFlowLayout.m */,
 				E66C258D1E61734E006DC0C6 /* model */,
@@ -552,7 +547,6 @@
 				E66C26B51E63FE8D006DC0C6 /* UIImage+MultiFormat.m in Sources */,
 				E66C26B41E63FE8D006DC0C6 /* UIImage+GIF.m in Sources */,
 				E66C26AF1E63FE8D006DC0C6 /* SDWebImageDownloader.m in Sources */,
-				E66C260F1E63D8BD006DC0C6 /* HPViewController.m in Sources */,
 				E66C26B81E63FE8D006DC0C6 /* UIImageView+WebCache.m in Sources */,
 				E66C26B31E63FE8D006DC0C6 /* UIButton+WebCache.m in Sources */,
 				E66C26091E62E9EF006DC0C6 /* HPCollectionFooterView.m in Sources */,

@@ -49,13 +49,13 @@ static int DEFAULTCOLUMN = 3;
 - (void)prepareLayout
 {
     [super prepareLayout];
-    NSLog(@"%s,line=%d",__FUNCTION__,__LINE__);
     // 设置默认值
     self.rowSpace = DEFAULTSPACE;
     self.columnSpace = DEFAULTSPACE;
     self.cellColumn = DEFAULTCOLUMN;
     self.sectionEdgeInsets = UIEdgeInsetsMake(DEFAULTSPACE, DEFAULTSPACE, DEFAULTSPACE, DEFAULTSPACE);
-    
+    // 重置所有属性
+    [self.cellAttrsArray removeAllObjects];
     // 重置每一列的最大值
     [self.columnMaxYs removeAllObjects];
     for (int column=0; column < self.cellColumn ; column++) {
@@ -79,7 +79,6 @@ static int DEFAULTCOLUMN = 3;
 }
 
 - (CGSize)collectionViewContentSize{
-    NSLog(@"%s,line=%d",__FUNCTION__,__LINE__);
     CGFloat tmpMaxY = [self.columnMaxYs[0] doubleValue];
     for (int index=0; index<self.columnMaxYs.count; index++) {
         CGFloat columnMaxY = [self.columnMaxYs[index] doubleValue];
@@ -92,13 +91,11 @@ static int DEFAULTCOLUMN = 3;
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    NSLog(@"%s,line=%d",__FUNCTION__,__LINE__);
     return self.cellAttrsArray;
 }
 // 说明cell的布局属性
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%s,line=%d",__FUNCTION__,__LINE__);
     UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     // 计算indexPath位置cell的属性
     CGSize collectionViewSize = self.collectionView.frame.size;
@@ -132,7 +129,6 @@ static int DEFAULTCOLUMN = 3;
 // 说明段头段尾的属性
 - (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%s,line=%d",__FUNCTION__,__LINE__);
     // 找出最大Y值那一列
     int maxColumn = 0;
     CGFloat tmpMaxY = [self.columnMaxYs[0] doubleValue];

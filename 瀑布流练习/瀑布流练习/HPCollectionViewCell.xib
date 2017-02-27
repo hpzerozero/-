@@ -46,7 +46,7 @@
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="ZKT-E2-0OR" firstAttribute="leading" secondItem="B5w-md-zvw" secondAttribute="trailing" constant="5" id="33v-GC-vBX"/>
                 <constraint firstAttribute="trailing" secondItem="ZKT-E2-0OR" secondAttribute="trailing" constant="5" id="8NJ-yQ-lVd"/>

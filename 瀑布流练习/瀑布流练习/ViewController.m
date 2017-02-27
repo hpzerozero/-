@@ -55,9 +55,7 @@ static NSString *footerIdentifier = @"HPFooter";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-//    return self.viewModel.dataArray.count;
-//    [self.hpCollectionView.collectionViewLayout invalidateLayout];
-    return 1;
+    return self.viewModel.dataArray.count;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     NSArray *arr = self.viewModel.dataArray[section];
@@ -107,14 +105,6 @@ static NSString *footerIdentifier = @"HPFooter";
 - (void)loadMoreInfo
 {
     [self.viewModel getMoreData];
-    @try {
-        
-        [self.hpCollectionView reloadData];
-//        [self.hpCollectionView.collectionViewLayout invalidateLayout];
-    } @catch (NSException *exception) {
-        NSLog(@"%s,line=%d, %@",__FUNCTION__,__LINE__, exception);
-    } @finally {
-        
-    }
+    [self.hpCollectionView reloadData];
 }
 @end

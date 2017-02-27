@@ -36,6 +36,6 @@
     NSArray *dataArray4 = [DataModel objectArrayWithFilename:@"4.plist"];
     NSMutableArray *tmpArray = [self.dataArray[0] mutableCopy];
     [tmpArray addObjectsFromArray:dataArray4];
-    self.dataArray[0] = tmpArray;
+    [self.dataArray replaceObjectAtIndex:0 withObject:tmpArray];
 }
 @end
